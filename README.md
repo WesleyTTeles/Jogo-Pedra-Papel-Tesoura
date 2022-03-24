@@ -7,3 +7,5 @@ Primeira Parte Criada [22-03-22]
     - Estrutura Inicial Html
     - Estutura Inicial Css
     - Criação do Readme
+
+Segunda Parte
