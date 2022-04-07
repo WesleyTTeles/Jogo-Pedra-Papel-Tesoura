@@ -2,9 +2,17 @@ body {
     margin: 0;
     padding: 0;
     background-color: #E5E5E5;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    width: 80%;
 }
 .title h1{
-    font-family: 'Gill Sans', Gill Sans MT, Calibri, Trebuchet MS, sans-serif;
+    font-family: 'Play', sans-serif;
     font-weight: normal;
     font-size: 2rem;
     justify-content: center;
@@ -15,39 +23,53 @@ body {
 }
 .table-people{
     display: flex;
-    width: 50%;
+    width: 100%;
     height: 200px;
     justify-content: center;
     background-color: lightcoral;
-    margin: 50px 20px 0 20px;
+    margin: 50px 10px 0px 0px;
+}
+.table-people span{
+    font-family: 'Play', sans-serif;
+    font-size: 1.5rem;
 }
 .table-computer{
     display: flex;
-    width: 50%;
+    width: 100%;
     height: 200px;
     justify-content: center;
     background-color: lightblue;
-    margin: 50px 20px 0 20px;
+    margin: 50px 0px 0px 0px;
 }
-.hand{
+.hand-people, .hand-computer{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.hand img:hover{
+.hand-people img:hover{
     opacity: 1;
 }
-.hand img{
+.hand-people img{
     width: auto;
     height: 100px;
     opacity: .2 ;
     cursor: pointer;
 }
+.hand-computer img:hover{
+    opacity: 1;
+}
+.hand-computer img{
+    width: auto;
+    height: 100px;
+    cursor: no-drop;
+}
 .score span{
-    font-size: 2rem;
+    font-family: 'Play', sans-serif;
+    font-size: 1.5rem;   
 }
 .winner{
-    font-family: 'Gill Sans', Gill Sans MT, Calibri, Trebuchet MS, sans-serif;
+    text-align: center;
+    font-family: 'Play', sans-serif;
     font-weight: normal;
     font-size: 2rem;
     margin: 20px 0 0 20px;
@@ -59,6 +81,12 @@ body {
     }
     .table-people, .table-computer {
         width: 100%;
-       
+        margin-bottom: 10px;
+    }
+    main{
+        width: 100%;
+    }
+    .winner{
+        margin: 0;
     }
 }

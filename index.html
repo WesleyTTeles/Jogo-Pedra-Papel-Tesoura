@@ -1,42 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap" rel="stylesheet">  
     <title>Game Project</title>
 </head>
 <body>
     <main>
         <div class="title">
-            <h1>Game Project - Paper, Rock and Scissors</h1>
+            <h1>Paper, Rock and Scissors</h1>
         </div>
         <div class="table">    
             <div class="table-people">
-                <div class="hand">
-                    <img src="assets/img/paper.png" alt="paper"/>
-                    <img src="assets/img/rock.png" alt="rock"/>
-                    <img src="assets/img/scissors.png" alt="scissors"/>
+                <span>Jogador</span>
+                <div class="hand-people">
+                    <img src="assets/img/paper.png" onclick="jogar(1)" alt="paper"/>
+                    <img src="assets/img/rock.png" onclick="jogar(2)" alt="rock"/>
+                    <img src="assets/img/scissors.png" onclick="jogar(3)" alt="scissors" />
                 </div>
                 <div class="score">
-                    <span>0</span>
+                    
+                    <span id="score-people">0</span>
                 </div>
             </div>
             <div class="table-computer">
-                <div class="hand">
+                <div class="hand-computer">
                     <img src="assets/img/paper.png" alt="paper"/>
                     <img src="assets/img/rock.png" alt="rock"/>
                     <img src="assets/img/scissors.png" alt="scissors"/>
                 </div>
                 <div class="score">
-                    <span>0</span>
+                    <span id="score-machine">0</span>
                 </div>
             </div>
         </div>   
         <div class="winner">
-            <span>Resultado</span>
+            <span id="mensagem">Resultado</span>
         </div>
     </main>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
