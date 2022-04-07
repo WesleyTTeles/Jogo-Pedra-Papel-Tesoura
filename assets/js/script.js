@@ -65,12 +65,12 @@ function jogar (escolha) {
     document.querySelector('#score-people').innerHTML = pontuacaoJogador;
     document.querySelector('#score-machine').innerHTML = computadorPontuacao;
 
-    if(pontuacaoJogador == 1){
-        Swal.fire('Any fool can use a computer')
+    if(pontuacaoJogador == 5){
+        alert('Jogador Ganhou!')
         document.location.reload(true);
     }
-    if(computadorPontuacao == 1){
-        Swal.fire('Computador Ganhou!')
+    if(computadorPontuacao == 5){
+        alert('Computador Ganhou!')
         document.location.reload(true);
     }
 }
